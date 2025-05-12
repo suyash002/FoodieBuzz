@@ -1,12 +1,78 @@
-# React + Vite
+🍽️ Food Delivery App
+A modern food delivery platform built with React, Redux Toolkit, and Firebase Authentication. Users can browse recipes, view detailed dish information, manage their cart, and place orders seamlessly.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📸 Demo
 
-Currently, two official plugins are available:
+🚀 Features
+Recipe Explorer: Browse a variety of recipes fetched from DummyJSON.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Dish Details: View comprehensive details of each dish, including ingredients, preparation steps, and nutritional information.
 
-## Expanding the ESLint configuration
+User Authentication: Secure login and registration using Firebase Authentication.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cart Management: Add, remove, and adjust quantities of items in the cart with real-time updates.
+
+Responsive Design: Optimized for both desktop and mobile devices.
+
+Notifications: Real-time feedback using react-toastify for actions like adding items to the cart or login status.
+
+🛠️ Tech Stack
+Frontend: React, React Router DOM
+
+State Management: Redux Toolkit
+
+Authentication: Firebase Authentication
+
+Styling: CSS Modules
+
+Notifications: React Toastify
+
+API: DummyJSON Recipes API
+
+🧪 Usage
+Browse Recipes: Navigate to the homepage to view a list of available recipes.
+
+View Dish Details: Click on a recipe to see detailed information.
+
+Add to Cart: Click "Add to Cart" to include the dish in your cart. If not logged in, you'll be redirected to the login page.
+
+Manage Cart: Adjust quantities or remove items directly from the cart page.
+
+Authentication: Register or log in to manage your cart and place orders.
+
+🔐 Authentication Flow
+Protected Routes: Certain routes like /cart are protected and require authentication.
+
+Redirects: Unauthenticated users attempting to access protected routes are redirected to the /auth page.
+
+State Management: Authentication state is managed using Redux, ensuring consistent access across components.
+
+🗂️ Project Structure
+food-delivery-app/
+├── public/
+├── src/
+│   ├── Components/
+│   │   ├── DishDetails/
+│   │   └── RestaurantSection/
+│   ├── Config/
+│   │   └── firebase.js
+│   ├── redux/
+│   │   ├── slices/
+│   │   │   ├── authSlice.js
+│   │   │   └── cartSlice.js
+│   │   └── store.js
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
+
+📄 License
+This project is licensed under the MIT License.
+
+🙌 Acknowledgements
+DummyJSON for providing the recipe API.
+
+React Toastify for elegant notifications.
+
+Firebase for authentication services.
