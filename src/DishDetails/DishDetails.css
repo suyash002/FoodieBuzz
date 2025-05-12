@@ -1,0 +1,175 @@
+.dish-detail-container {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 20px auto; /* Centered with vertical margin */
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Optional if layout breaks */
+}
+
+.dish-banner {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.dish-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.dish-basic-info {
+  flex: 1;
+}
+
+.dish-basic-info h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.cuisine {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.ratings {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #f39c12;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #f2f2f2;
+  padding: 5px 12px;
+  margin: 5px 6px 0 0;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dish-meta {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.dish-sections-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap; 
+  width: 100%;
+  margin-top: 30px;
+}
+
+.dish-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.dish-section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.dish-section ul, .dish-section ol {
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.dish-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn.primary {
+  background-color: #f16c5d;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #dd5549;
+}
+
+.btn.secondary {
+  background-color: #f16c5d;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn.secondary:hover {
+  background-color: #dd5549; /* Darker blue on hover */
+}
+
+.loader, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 50px;
+}
+.price{
+  font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.3;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+.suggestions {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,39 @@
+.food-categories {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .category-card {
+    background: #f8f8f8;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .category-card:hover {
+    transform: translateY(-5px);
+    background-color: #ffece6;
+  }
+  
+  .category-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  

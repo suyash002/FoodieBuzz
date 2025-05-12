@@ -1,0 +1,55 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #fffbf0;
+  }
+  
+  .auth-box {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .auth-box h2 {
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #e23744;
+  }
+  
+  .auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: #e23744;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .auth-box button:hover {
+    background: #d12e3a;
+  }
+  
+  .toggle-text {
+    margin-top: 12px;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
